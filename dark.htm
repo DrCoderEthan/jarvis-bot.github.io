@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Jarvis Discord Bot</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  // Add smooth scrolling to all links
+  $("a").on('click', function(event) {
+
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function(){
+   
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+});
+</script>
+
+    <link rel="icon" href="./images/j.png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="dark.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <section id="home">
+      <div class="container">
+        <div class="navbar">
+            <img src="images/rszlogo.png" alt="logo" ,class="logo">
+            <nav>
+                <ul id="menuList">
+                    <li><a href="dark.htm">Home</a></li>
+                    <li><a href="#cards">About Jarvis</a></li>
+                    <li><a href="commands.htm">commands</a></li>
+                    <li><a href="https://discord.com/api/oauth2/authorize?client_id=787957517099073536&permissions=502655062&scope=bot">Invite</a></li>
+                    <li><a href="index.htm">Light Theme</a></li>
+                </ul>
+            </nav>
+            <img src="images/menu (1).png" alt="menuicon"class="menu-icon" onclick="togglemenu()">  
+        </div>
+        <div class="row">
+            <div class="col-1">
+                <img src="images/Vanilla-1s-248px.gif" alt="">
+                <h3>Jarvis is an advance Discord Bot</h3>
+                <p>(Moderation/Social/Teaching/Image)</p>
+                <h4>Invite Jarvis Today</h4>
+                <a href="https://discord.com/api/oauth2/authorize?client_id=787957517099073536&permissions=502655062&scope=bot" class="invitelink">
+                  <button type="button" class="button-2">Invite<img src="images/arrow.png"></button>
+                </a>
+            </div>
+            <div class="col-2">
+                <img src="images/client" alt="" class="jarvis">
+                <div class="color-box">
+                </div>
+            </div>
+        </div>
+    </div>
+    </section>
+    <section id="phone">
+      <div class="wrapper">
+        <div class="text-p"><h2>About Jarvis </h2></div>
+        <section id="usp">
+            <ul>
+                <li>
+                    <img src="./images/python.png">
+                    <h2>Coded Python</h2>
+                </li>
+                
+                <li>
+                    <img src="./images/info.png">
+                    <h2>Inspiring commands</h2>
+                    <p></p>
+                </li>
+                <li>
+                    <img src="./images/settings.png">
+                    <h2>Mini-Moderater</h2>
+                </li>
+                <li>
+                    <img src="./images/code.png">
+                    <h2>Coding Commands</h2>
+                </li>
+            </ul>
+          </section>         
+    </section>
+    <!--Stats-->
+    <br>
+    <br>
+    <br>
+    <section id="stats">
+      <div class="t">
+      </div>
+      <div class="s-container">
+          <div class="p-box">
+            <div class="imgz">
+              <img src="./images/server.png" alt="">
+            </div>
+              <div class="int">
+                1486
+              </div>
+              <div class="t">
+                servers
+              </div>
+          </div>
+          <br>
+          <br>
+          <div class="p-box">
+            <div class="imgz">
+              <img src="./images/group (1).png" alt="">
+            </div>
+              <div class="int">
+                100k
+              </div>
+              <div class="t">
+                users
+              </div>
+          </div>
+          <br>
+          <br>
+          <div class="p-box">
+            <div class="imgz">
+              <img src="./images/hashtag.png" alt="">
+            </div>
+              <div class="int">
+                7400
+              </div>
+              <div class="t">
+                channels
+              </div>
+          <br>
+          <br>              
+          </div>
+          <br>
+          <br>
+          <div class="p-box">
+            <div class="imgz">
+              <img src="./images/shards.png" alt="">
+            </div>
+              <div class="int">
+                1
+              </div>
+              <div class="t">
+                Shards
+              </div>            
+          </div>
+          
+      </div>
+    </section>
+   <!--Cards Of The Website-->
+   <section id="cards">
+    <div class="grid">
+      <section class="container">
+          <div class="card_outer">
+            <div class="card">
+    
+              <div class="content">
+                <h2 class="title">Made In Python</h2>
+                <p class="copy">Jarvis was made in python and Python is belived to be a very popular and powerful language it is also used in making A.I too.</p>
+                <button class="btn">Learn More</button>
+              </div>
+            </div>
+            <div class="card">
+              <div class="content">
+                <h2 class="title">Inspiring Commands</h2>
+                <p class="copy">Jarvis Inspires people by taking out the negative engergy and giving in the positive vibes it responds on a negative comment and spreades positivity thats wht Jarvis is Made For :)</p>
+                <button class="btn">Learn More</button>
+              </div>
+            </div>
+            <div class="card">
+              <div class="content">
+                <h2 class="title">Mini-Moderation</h2>
+                <p class="copy">Jarvis is also a mini-moderator too with limited Moderation Commands, If you're thinking to add Jarvis for Moderation Only It will be good but not great But Pls do explore the other commands too.</p>
+                <button class="btn">Learn More</button>
+              </div>
+            </div>
+            <div class="card">
+              <div class="content">
+                <h2 class="title">Coding Program</h2>
+                <p class="copy">Jarvis Teaches People Coding through its coding program using Discord.Embeds it a great way to Learn Codding if you are intrested.But you have to read a lot , demo codes are also given and ready , more langauges come in the future</p>
+                <button class="btn">Learn More</button>
+              </div>
+            </div>
+          </div>
+        </section>
+     </div>
+   </section>
+
+   <!-- slideshow -->
+   <section id="slideshow">
+    <div class="slideshow-container">
+
+      <div class="mySlides fade">
+        <div class="numbertext">1 / 3</div>
+        <img src="images/iam2.png" style="width:100%">
+        <div class="text">Commands</div>
+      </div>
+      
+      <div class="mySlides fade">
+        <div class="numbertext">2 / 3</div>
+        <img src="images/pics.png" style="width:100%">
+        <div class="text">Inspiring</div>
+      </div>
+      
+      <div class="mySlides fade">
+        <div class="numbertext">3 / 3</div>
+        <img src="images/picz.png" style="width:100%">
+        <div class="text">Coding commands</div>
+      </div>
+      
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      
+      </div>
+      <br>
+      
+      <div style="text-align:center" class="ss1">
+        <span class="dot" onclick="currentSlide(1)"></span> 
+        <span class="dot" onclick="currentSlide(2)"></span> 
+        <span class="dot" onclick="currentSlide(3)"></span> 
+      </div>
+  
+  
+  
+        <script>
+  
+            var menuList = document.getElementById("menuList");
+            
+            menuList.style.maxHeight = "0px";
+  
+            function togglemenu(){
+  
+              if(menuList.style.maxHeight == "0px"){
+                  menuList.style.maxHeight = "130px"
+              }
+              else{
+                  menuList.style.maxHeight = "0px";
+              }
+            }
+  
+  
+  
+        </script>
+  
+  
+  
+  <script>
+    var slideIndex = 1;
+    showSlides(slideIndex);
+    
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+    
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+    
+    function showSlides(n) {
+      var i;
+      var slides = document.getElementsByClassName("mySlides");
+      var dots = document.getElementsByClassName("dot");
+      if (n > slides.length) {slideIndex = 1}    
+      if (n < 1) {slideIndex = slides.length}
+      for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";  
+      }
+      for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";  
+      dots[slideIndex-1].className += " active";
+    }
+    </script>
+    <div>
+  
+
+   </section>
+   
+  </div>
+  <br>
+
+  <!--dev card-->
+  <section id="dev">
+    <div class="abtus">
+      <h2>About Us || The team</h2>
+    </div>
+    <div class="con">
+      <div class="grid-2">
+        <div class="container-2">
+          <div class="cards">
+            <div class="imgBx">
+              <img src="images/man.png" alt="photo">
+            </div>
+            <div class="contentBx">
+              <h2>Ethan Jacob</h2>
+              <br>
+              <h3>
+                Bot Developer Lead
+              </h3>
+              <br>
+              <a href="https://www.instagram.com/drcoderethan/"><span><i class="fa fa-instagram" aria-hidden="true"></i></span></a>
+              <a href="https://twitter.com/EthanJa37593495"><span><i class="fa fa-twitter" aria-hidden="true"></i></span></a>
+              <a href="https://www.youtube.com/channel/UC2bB8ER2rlDZbo_6uDX_8XA"><span><i class="fa fa-youtube-play" aria-hidden="true"></i></span></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <br>
+
+      <div class="grid-3">
+        <div class="container-2">
+          <div class="cards">
+            <div class="imgBx">
+              <img src="images/man.png" alt="photo">
+            </div>
+            <div class="contentBx">
+              <h2>Ishant Sharma</h2>
+              <br>
+              <h3>
+                Website Developer
+              </h3>
+              <br>
+              <a href="https://www.instagram.com/dudeishant/"><span><i class="fa fa-instagram" aria-hidden="true"></i></span></a>
+              <a href="https://twitter.com/dudeishant"><span><i class="fa fa-twitter" aria-hidden="true"></i></span></a>
+              <a href="https://www.youtube.com/channel/UClCK3DKU46LDGS3abAoGYzw"><span><i class="fa fa-youtube-play" aria-hidden="true"></i></span></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="grid-3">
+        <div class="container-2">
+          <div class="cards">
+            <div class="imgBx">
+              <img src="images/man.png" alt="photo">
+            </div>
+            <div class="contentBx">
+              <h2>Aksharj</h2>
+              <br>
+              <h3>
+                Website Developer
+              </h3>
+              <br>
+              <a href="https://www.instagram.com/justin_craked_at_fortnite_12/"><span><i class="fa fa-instagram" aria-hidden="true"></i></span></a>
+              <a href="https://twitter.com/iamakshaj1"><span><i class="fa fa-twitter" aria-hidden="true"></i></span></a>
+              <a href="https://www.youtube.com/channel/UCYERd5WsduA3h-c4rvpDS7g"><span><i class="fa fa-youtube-play" aria-hidden="true"></i></span></a>
+            </div>
+          </div>
+        </div>
+      </div>
+  </section>
+
+  <!--website Footer-->
+  <section id="footer">
+    <footer class="footer">
+      <div class="container-f">
+        <div class="row-2">
+          <div class="footer-col">
+            <h4>Jarvis</h4>
+            <ul>
+              <li id="p"><a href="#home">What is Jarvis</a></li>
+              <li><a href="#cards">About Jarvis</a></li>
+              <li><a href="#slideshow">About The Devs</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Get help</h4>
+            <ul>
+              <li><a href="https://discord.gg/DhsZRq77zK">FAQ</a></li>
+              <li><a href="https://discord.gg/DhsZRq77zK">Report Bugs/Errors</a></li>
+              <li><a href="https://discord.gg/DhsZRq77zK">Support</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Jarvis Widgets</h4>
+            <ul>
+              <li><a href="https://top.gg/bot/787957517099073536">Top.gg</a></li>
+              <li><a href="https://discordbotlist.com/bots/jarvis-9609">Discordbotlist.com</a></li>
+              <li><a href="https://voidbots.net/bot/787957517099073536/">VoidBot.net</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <div class="social-links">
+              <h4>follow us</h4>
+              <ul>
+                <li><a href="https://twitter.com/Jarvis84069829" target="_blank"><i class="fa fa-twitter"> Twitter</i></a></li>
+                <li><a href="https://www.instagram.com/drcoderethan/"target="_blank"><i class="fa fa-instagram"></i> Instagram</a></li>
+                <li><a href="https://www.youtube.com/channel/UCFXCy8SZNvDQsyl1a0td7CA"target="_blank"><i class="fa fa-youtube-play"></i> Youtube</a></li>
+              </ul>
+            </div>
+            <div class="footer-bottom">
+              &copy; Jarvis-bot | 2021 
+          </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </section>
+
+</body>
+</html>

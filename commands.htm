@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="icon" href="./images/j.png">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="commands.css">
+    <title>Jarvis Discord Bot</title>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="header">
+            <div class="title">
+                Jarvis Command Search
+            </div>
+
+            <div class="search_box">
+                <input type="text", id="search_input" placeholder="Search Up Commands . . .">
+            </div>
+        </div>
+        <div class="table_wrap">
+            <div class="table_header">
+                <ul>
+                    <li>
+                        <div class="item">
+                            <div class="name">
+                                <span>NAME</span>
+                            </div>
+                            <div class="role">
+                                PERM
+                            </div>
+                            <div class="des">
+                                <span>DESCRIPTION</span>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="table_body">
+                <ul>
+                  <li>
+                    <div class="item">
+                      <div class="name">
+                        <span>ping</span>
+                      </div>
+                      <div class="role">
+                        <span class="open">General</span>
+                      </div>
+                      <div class="issue">
+                        <span>It Finds Bots Latency and ping.</span>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="item">
+                      <div class="name">
+                        <span>inspire</span>
+                      </div>
+                      <div class="role">
+                        <span class="open">General</span>
+                      </div>
+                      <div class="issue">
+                        <span>It inspires you with Inspiring Messages</span>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="item">
+                      <div class="name">
+                        <span>responding true</span>
+                      </div>
+                      <div class="role">
+                        <span class="open">General</span>
+                      </div>
+                      <div class="issue">
+                        <span>it responds on Negetaive sentences </span>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="item">
+                      <div class="name">
+                        <span>responding false</span>
+                      </div>
+                      <div class="role">
+                        <span class="open">General</span>
+                      </div>
+                      <div class="issue">
+                        <span>It doesnot respond on a Negetaive words</span>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="item">
+                      <div class="name">
+                        <span>poll</span>
+                      </div>
+                      <div class="role">
+                        <span class="mod">Mini-Mod</span>
+                      </div>
+                      <div class="issue">
+                        <span>It makes a Poll [<code>.poll<"your-query"></code>]</span>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="item">
+                      <div class="name">
+                        <span>pls tell</span>
+                      </div>
+                      <div class="role">
+                        <span class="open">General</span>
+                      </div>
+                      <div class="issue">
+                        <span>It is a type of 8_ball or condition.</span>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="item">
+                      <div class="name">
+                        <span>server</span>
+                      </div>
+                      <div class="role">
+                        <span class="open">General</span>
+                      </div>
+                      <div class="issue">
+                        <span>It gives you the data for the Server</span>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="item">
+                      <div class="name">
+                        <span>whois|userinfo</span>
+                      </div>
+                      <div class="role">
+                        <span class="open">General</span>
+                      </div>
+                      <div class="issue">
+                        <span>It gives the userinfo of the Person.</span>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="item">
+                      <div class="name">
+                        <span>kick</span>
+                      </div>
+                      <div class="role">
+                        <span class="mod">Mini-Mod</span>
+                      </div>
+                      <div class="issue">
+                        <span>It kicks the User, Mention the User</span>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="item">
+                      <div class="name">
+                        <span>ban</span>
+                      </div>
+                      <div class="role">
+                        <span class="admin">Admin</span>
+                      </div>
+                      <div class="issue">
+                        <span>It bans the User, Mention the User</span>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="item">
+                      <div class="name">
+                        <span>warn</span>
+                      </div>
+                      <div class="role">
+                        <span class="mod">Mini-Mod</span>
+                      </div>
+                      <div class="issue">
+                        <span>It warns the User, Mention the User</span>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="item">
+                      <div class="name">
+                        <span>purge</span>
+                      </div>
+                      <div class="role">
+                        <span class="mod">Mini-Mod</span>
+                      </div>
+                      <div class="issue">
+                        <span>It purge the Messages, Mention Number</span>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="item">
+                      <div class="name">
+                        <span>mute</span>
+                      </div>
+                      <div class="role">
+                        <span class="admin">Admin</span>
+                      </div>
+                      <div class="issue">
+                        <span>It Mutes the User, Mention the User</span>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="item">
+                      <div class="name">
+                        <span>unmute</span>
+                      </div>
+                      <div class="role">
+                        <span class="admin">Admin</span>
+                      </div>
+                      <div class="issue">
+                        <span>It purge the Messages, Mention Number</span>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="item">
+                      <div class="name">
+                        <span>snipe</span>
+                      </div>
+                      <div class="role">
+                        <span class="mod">Mini-Mod</span>
+                      </div>
+                      <div class="issue">
+                        <span>It snipes the deleted Message</span>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="item">
+                      <div class="name">
+                        <span>lock</span>
+                      </div>
+                      <div class="role">
+                        <span class="mod">Mini-Mod</span>
+                      </div>
+                      <div class="issue">
+                        <span>It locks the channel , Mention channel</span>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="item">
+                      <div class="name">
+                        <span>unlock</span>
+                      </div>
+                      <div class="role">
+                        <span class="mod">Mini-Mod</span>
+                      </div>
+                      <div class="issue">
+                        <span>It unlocks the channel , Mention channel</span>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="item">
+                      <div class="name">
+                        <span>auto-swear-word</span>
+                      </div>
+                      <div class="role">
+                        <span class="auto">Auto-Mod</span>
+                      </div>
+                      <div class="issue">
+                        <span>It deletes swear words</span>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="item">
+                      <div class="name">
+                        <span>want</span>
+                      </div>
+                      <div class="role">
+                        <span class="pic">Pic-perms</span>
+                      </div>
+                      <div class="issue">
+                        <span>Image commands, It wants the user</span>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="item">
+                      <div class="name">
+                        <span>rip</span>
+                      </div>
+                      <div class="role">
+                        <span class="pic">Pic-perms</span>
+                      </div>
+                      <div class="issue">
+                        <span>Image commands, It RIP the user</span>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="item">
+                      <div class="name">
+                        <span>thanos</span>
+                      </div>
+                      <div class="role">
+                        <span class="pic">Pic-perms</span>
+                      </div>
+                      <div class="issue">
+                        <span>Image commands, It thanoses a user</span>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="item">
+                      <div class="name">
+                        <span>voldemort</span>
+                      </div>
+                      <div class="role">
+                        <span class="pic">Pic-perms</span>
+                      </div>
+                      <div class="issue">
+                        <span>Image commands, It voldemort a user</span>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="item">
+                      <div class="name">
+                        <span>huh</span>
+                      </div>
+                      <div class="role">
+                        <span class="pic">Pic-perms</span>
+                      </div>
+                      <div class="issue">
+                        <span>Image commands, It shows huh images</span>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="item">
+                      <div class="name">
+                        <span>naruto</span>
+                      </div>
+                      <div class="role">
+                        <span class="pic">Pic-perms</span>
+                      </div>
+                      <div class="issue">
+                        <span>Image commands, It shows naruto images</span>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="item">
+                      <div class="name">
+                        <span>emojify</span>
+                      </div>
+                      <div class="role">
+                        <span class="pic">Pic-perms</span>
+                      </div>
+                      <div class="issue">
+                        <span>Image commands, It emojify's text</span>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="item">
+                      <div class="name">
+                        <span>gif</span>
+                      </div>
+                      <div class="role">
+                        <span class="pic">Pic-perms</span>
+                      </div>
+                      <div class="issue">
+                        <span>GIF commands, It shows gif images</span>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="item">
+                      <div class="name">
+                        <span>math</span>
+                      </div>
+                      <div class="role">
+                        <span class="open">General</span>
+                      </div>
+                      <div class="issue">
+                        <span>shows list of all Math commands</span>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="item">
+                      <div class="name">
+                        <span>random</span>
+                      </div>
+                      <div class="role">
+                        <span class="open">General</span>
+                      </div>
+                      <div class="issue">
+                        <span>Finds a random number <.rand 132 123></span>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="item">
+                      <div class="name">
+                        <span>codehelp</span>
+                      </div>
+                      <div class="role">
+                        <span class="open">General</span>
+                      </div>
+                      <div class="issue">
+                        <span>A coding Program which teaches people how to code.</span>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="item">
+                      <div class="name">
+                        <span>whycode</span>
+                      </div>
+                      <div class="role">
+                        <span class="open">General</span>
+                      </div>
+                      <div class="issue">
+                        <span>An embed on why to code?</span>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="item">
+                      <div class="name">
+                        <span>chelp</span>
+                      </div>
+                      <div class="role">
+                        <span class="open">General</span>
+                      </div>
+                      <div class="issue">
+                        <span>An embed on all the coding commands</span>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="item">
+                      <div class="name">
+                        <span>pickl</span>
+                      </div>
+                      <div class="role">
+                        <span class="open">General</span>
+                      </div>
+                      <div class="issue">
+                        <span>Shows about Different languages</span>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="item">
+                      <div class="name">
+                        <span>startl</span>
+                      </div>
+                      <div class="role">
+                        <span class="open">General</span>
+                      </div>
+                      <div class="issue">
+                        <span>Starts your course of coding Program</span>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="item">
+                      <div class="name">
+                        <span>music</span>
+                      </div>
+                      <div class="role">
+                        <span class="song">Voice-perms</span>
+                      </div>
+                      <div class="issue">
+                        <span>It tells about the complete list of Music commands</span>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="item">
+                      <div class="name">
+                        <span>play</span>
+                      </div>
+                      <div class="role">
+                        <span class="song">Voice-perms</span>
+                      </div>
+                      <div class="issue">
+                        <span>It joins vc plays the song u desire <.play url></span>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="item">
+                      <div class="name">
+                        <span>pause</span>
+                      </div>
+                      <div class="role">
+                        <span class="vc">Voice-perms</span>
+                      </div>
+                      <div class="issue">
+                        <span>It pauses the current song</span>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="item">
+                      <div class="name">
+                        <span>resume</span>
+                      </div>
+                      <div class="role">
+                        <span class="song">Voice-perms</span>
+                      </div>
+                      <div class="issue">
+                        <span>It resumes the current song </span>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="item">
+                      <div class="name">
+                        <span>leave</span>
+                      </div>
+                      <div class="role">
+                        <span class="song">Voice-perms</span>
+                      </div>
+                      <div class="issue">
+                        <span>It leaves the Voice channel</span>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+            </div>
+  </div>
+  <button class="btn">
+  <a href="index.htm">Back</a>
+  </button>
+
+<script src="commands.js"></script>
+    
+</body>
+</html>
